@@ -10,7 +10,6 @@ use App\Comment;
 class PostsController extends Controller
 {
     //
-
 	public function AllPost(){
 		$posts = Post::all();
 		return view('allpost', compact('posts'));
@@ -80,7 +79,7 @@ class PostsController extends Controller
     public function DeleteCommentPost($id){
     	$comment = Comment::find($id);
     	$comment->delete();
-    	
+
     	return redirect()->back();
     }
 

@@ -12,8 +12,10 @@
 				<tr>
 					<td>{{$post->title}}</td>
 					<td>
+						@if(Auth::user())
 						<a class="btn btn-sm btn-primary" href="{{url('/edit/'.$post->id)}}">Ubah</a>
 						<a class="btn btn-sm btn-danger" href="{{url('/delete/'.$post->id)}}">Hapus</a>
+						@endif
 						<a class="btn btn-sm btn-success" href="{{url('/view/'.$post->id)}}">Lihat</a>						
 						
 					</td>
