@@ -1,5 +1,7 @@
 # blog-camin
 
+cara jalanin projek laravel kalo habis kalian clone dari github
+
 di gitbash :
 1. git clone https://github.com/mailsyarief/blog-camin.git
 2. cd blog-camin
